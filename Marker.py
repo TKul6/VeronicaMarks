@@ -18,3 +18,17 @@ class Marker:
 		else:
 			print "Direcotry " + path + " does not exsits";
 
+	def add_mark(self, mark):
+		self.marks.append(mark)
+
+	def remove_mark(self,mark):
+		self.marks.remove(mark)
+
+	def clear_marks(self):
+		self.marks = [];
+
+	def print_marks(self):
+		print self.marks
+
+
+
