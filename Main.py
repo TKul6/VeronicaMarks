@@ -1,6 +1,6 @@
 from Marker import Marker
 
-marker = Marker({"Tomer": [],"Khalili":[]})
+marker = Marker(["Tomer","Khalili"])
 
 marker.mark_file("marking.txt")
 

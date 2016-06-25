@@ -5,7 +5,11 @@ class Marker:
 
 
 	def __init__(self,marks):
-		self.__marks = marks
+
+		self.__marks = {}
+
+		for mark in marks:
+			self.__marks[mark] = []
 
 	def mark_file(self,path):
 		with open(path) as file:
