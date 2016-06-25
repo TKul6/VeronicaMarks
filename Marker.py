@@ -12,7 +12,6 @@ class Marker:
 			for entry in os.listdir(path):
 				childPath = os.path.join(path,entry)
 				if(os.path.isdir(childPath)):
-					print "Directory: " + path;
 					self.mark_directory(childPath)
 				else:
 					self.mark_file(childPath);
